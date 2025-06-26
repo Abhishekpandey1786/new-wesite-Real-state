@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+        <a href="#" class="logo">
+            <img src="logo.webp" alt="Wealthome Logo" width="100" height="100">
+        </a>
+        <nav class="navbar" id="navbar">
+            <ul class="navbar-list">
+                <li><a href="#" class="navbar-link active">Home</a></li>
+                <li><a href="#service" class="navbar-link">Service</a></li>
+                <li><a href="#feature" class="navbar-link">Feacture</a></li>
+                <li><a href="#footer" class="navbar-link">Contact</a></li>
+                <li><a href="#About" class="navbar-link">About</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <a href="#" class="btn-link">Login</a>
+                <a href="#" class="btn-fill">Get Started</a>
+            </div>
+        </nav>
+        <button class="nav-toggle-btn" aria-label="Toggle navbar" id="nav-toggle">
+            <span class="material-symbols-rounded open">menu</span>
+            <span class="material-symbols-rounded close">close</span>
+        </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+       <video autoplay muted loop playsinline class="hero-video">
+    <source src="3773486-hd_1920_1080_30fps.mp4" type="video/mp4">
+  </video>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Find a place where you can be yourself.</h1>
+                <p class="hero-text">
+                    If you're looking for a place where you can be yourself, don't give up. Keep searching until you find a place that feels like home.
+                </p>
+                <form action="#" method="get" class="search-bar">
+                    <label class="search-item">
+                        <span class="label">Want to</span>
+                        <select name="want-to" class="search-item-field">
+                            <option value="buy" selected>Buy</option>
+                            <option value="sell">Sell</option>
+                            <option value="rent">Rent</option>
+                        </select>
+                        <span class="material-symbols-rounded">real_estate_agent</span>
+                    </label>
+                    <label class="search-item">
+                        <span class="label">Property type</span>
+                        <select name="property-type" class="search-item-field">
+                            <option value="any" selected>Any</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="townhome">Townhome</option>
+                            <option value="bungalow">Bungalow</option>
+                            <option value="loft">Loft</option>
+                        </select>
+                        <span class="material-symbols-rounded">gite</span>
+                    </label>
+                    <label class="search-item">
+                        <span class="label">Location</span>
+                        <input type="text" name="location" placeholder="Street, city, Zip..." class="search-item-field">
+                        <span class="material-symbols-rounded">location_on</span>
+                    </label>
+                    <button type="submit" class="search-btn">
+                        <span class="material-symbols-rounded">search</span>
+                        <span>Search</span>
+                    </button>
+                </form>
+            </div>
+            <div class="hero-images">
+                <img src="f1.webp" alt="Modern Home" class="hero-banner">
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Section -->
+<section class="property-section">
+    <div class="title-wrapper">
+                <div>
+                    <h2 class="section-title">Best homes in your city</h2>
+                    <p class="section-text">
+                        Discover the best properties hand-picked for you. Find your dream home with the best amenities and locations.
+                    </p>
+                </div>
+                <a href="#" class="btn btn-outline">
+                    <span>Explore more</span>
+                    <span class="material-symbols-rounded">arrow_outward</span>
+                </a>
+            </div>
+      <div class="property-list" id="feature">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-banner">
+            <img src="1p.jpg" alt="COVA Home Realty" class="img-cover">
+            <span class="badge">New</span>
+            <button class="fav-btn" aria-label="Add to favorite">
+              <span class="material-symbols-rounded">favorite</span>
+            </button>
+          </div>
+          <div class="card-content">
+            <span class="price">$710.68</span>
+            <h3 class="card-title">COVA Home Realty</h3>
+            <address class="card-address">1901 Thornridge Cir. Shiloh, Hawaii 81063</address>
+            <div class="card-meta">
+              <div class="meta-item"><span class="material-symbols-rounded">bed</span>3 Bed</div>
+              <div class="meta-item"><span class="material-symbols-rounded">bathtub</span>2 Bath</div>
+              <div class="meta-item"><span class="material-symbols-rounded">straighten</span>1430 sqft</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="card-banner">
+            <img src="p2.jpg" alt="Exit Realty" class="img-cover">
+            <button class="fav-btn" aria-label="Add to favorite">
+              <span class="material-symbols-rounded">favorite</span>
+            </button>
+          </div>
+          <div class="card-content">
+            <span class="price">$630.44</span>
+            <h3 class="card-title">Exit Realty</h3>
+            <address class="card-address">2972 Westheimer Rd. Santa Ana, Illinois 85486</address>
+            <div class="card-meta">
+              <div class="meta-item"><span class="material-symbols-rounded">bed</span>5 Bed</div>
+              <div class="meta-item"><span class="material-symbols-rounded">bathtub</span>4 Bath</div>
+              <div class="meta-item"><span class="material-symbols-rounded">straighten</span>1630 sqft</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-banner">
+            <img src="p3.avif" alt="The Real Estate Group" class="img-cover">
+            <button class="fav-btn" aria-label="Add to favorite">
+              <span class="material-symbols-rounded">favorite</span>
+            </button>
+          </div>
+          <div class="card-content">
+            <span class="price">$475.22</span>
+            <h3 class="card-title">The Real Estate Group</h3>
+            <address class="card-address">2118 Thornridge Cir. Syracuse, Connecticut 35624</address>
+            <div class="card-meta">
+              <div class="meta-item"><span class="material-symbols-rounded">bed</span>8 Bed</div>
+              <div class="meta-item"><span class="material-symbols-rounded">bathtub</span>5 Bath</div>
+              <div class="meta-item"><span class="material-symbols-rounded">straighten</span>1240 sqft</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="card-banner">
+            <img src="p4.jpg" alt="757 Realty" class="img-cover">
+            <button class="fav-btn" aria-label="Add to favorite">
+              <span class="material-symbols-rounded">favorite</span>
+            </button>
+          </div>
+          <div class="card-content">
+            <span class="price">$576.28</span>
+            <h3 class="card-title">757 Realty</h3>
+            <address class="card-address">4140 Parker Rd. Allentown, New Mexico 31134</address>
+            <div class="card-meta">
+              <div class="meta-item"><span class="material-symbols-rounded">bed</span>6 Bed</div>
+              <div class="meta-item"><span class="material-symbols-rounded">bathtub</span>6 Bath</div>
+              <div class="meta-item"><span class="material-symbols-rounded">straighten</span>1260 sqft</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="card-banner">
+            <img src="p5.jpg" alt="Beach Pros Realty Inc." class="img-cover">
+            <button class="fav-btn" aria-label="Add to favorite">
+              <span class="material-symbols-rounded">favorite</span>
+            </button>
+          </div>
+          <div class="card-content">
+            <span class="price">$473.85</span>
+            <h3 class="card-title">Beach Pros Realty Inc.</h3>
+            <address class="card-address">2715 Ash Dr. San Jose, South Dakota 83475</address>
+            <div class="card-meta">
+              <div class="meta-item"><span class="material-symbols-rounded">bed</span>10 Bed</div>
+              <div class="meta-item"><span class="material-symbols-rounded">bathtub</span>8 Bath</div>
+              <div class="meta-item"><span class="material-symbols-rounded">straighten</span>2350 sqft</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="card">
+          <div class="card-banner">
+            <img src="p6.jpg" alt="Keller Williams Elite Town Center" class="img-cover">
+            <button class="fav-btn" aria-label="Add to favorite">
+              <span class="material-symbols-rounded">favorite</span>
+            </button>
+          </div>
+          <div class="card-content">
+            <span class="price">$105.55</span>
+            <h3 class="card-title">Keller Williams Elite Town Center</h3>
+            <address class="card-address">75317 W. Gray St. Utica, Pennsylvania 57867</address>
+            <div class="card-meta">
+              <div class="meta-item"><span class="material-symbols-rounded">bed</span>8 Bed</div>
+              <div class="meta-item"><span class="material-symbols-rounded">bathtub</span>8 Bath</div>
+              <div class="meta-item"><span class="material-symbols-rounded">straighten</span>1950 sqft</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 7 -->
+        <div class="card">
+          <div class="card-banner">
+            <img src="p7.jpg" alt="All Pros Real Estate" class="img-cover">
+            <button class="fav-btn" aria-label="Add to favorite">
+              <span class="material-symbols-rounded">favorite</span>
+            </button>
+          </div>
+          <div class="card-content">
+            <span class="price">$739.65</span>
+            <h3 class="card-title">All Pros Real Estate</h3>
+            <address class="card-address">8502 Preston Rd. Inglewood, Maine 98380</address>
+            <div class="card-meta">
+              <div class="meta-item"><span class="material-symbols-rounded">bed</span>4 Bed</div>
+              <div class="meta-item"><span class="material-symbols-rounded">bathtub</span>4 Bath</div>
+              <div class="meta-item"><span class="material-symbols-rounded">straighten</span>1580 sqft</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="card">
+          <div class="card-banner">
+            <img src="p8.jpg" alt="FIT Realty" class="img-cover">
+            <button class="fav-btn" aria-label="Add to favorite">
+              <span class="material-symbols-rounded">favorite</span>
+            </button>
+          </div>
+          <div class="card-content">
+            <span class="price">$948.55</span>
+            <h3 class="card-title">FIT Realty</h3>
+            <address class="card-address">4517 Washington Ave. Manchester, Kentucky 39495</address>
+            <div class="card-meta">
+              <div class="meta-item"><span class="material-symbols-rounded">bed</span>3 Bed</div>
+              <div class="meta-item"><span class="material-symbols-rounded">bathtub</span>2 Bath</div>
+              <div class="meta-item"><span class="material-symbols-rounded">straighten</span>1120 sqft</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="section feature" id="service">
+        <div class="container feature-container">
+            <figure class="feature-banner">
+                <img src="f1.webp" alt="Home Renovation" width="1020" height="690" class="img-cover">
+            </figure>
+            <div class="feature-content">
+                <h2 class="feature-title">We Specialize In Quality Home Renovations</h2>
+                <p class="feature-text">
+                    Looking to renovate your home to reflect your style and personality? Look no further than our team of experts who specialize in quality home renovation to transform your space into a dream home you'll love. From design to execution.
+                </p>
+                <ul class="feature-list">
+                    <li><span class="material-symbols-rounded">check_circle</span>Smart Home</li>
+                    <li><span class="material-symbols-rounded">check_circle</span>Beautiful Scenery Around</li>
+                    <li><span class="material-symbols-rounded">check_circle</span>Exceptional Lifestyle</li>
+                    <li><span class="material-symbols-rounded">check_circle</span>Complete 24/7 Security</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section feature" >
+  <div class="container feature-container">
+    <div class="feature-content">
+      <h2 class="feature-title">We Are Experts In<br>Historic Home Renovations</h2>
+      <p class="feature-text">
+        Looking to renovate your home to reflect your style and personality? Look no further than our team of experts who specialize in quality home renovations to transform your space into a dream home you'll love. From design to execution.
+      </p>
+      <ul class="feature-list">
+        <li><span class="material-symbols-rounded">check_circle</span>Smart Home</li>
+        <li><span class="material-symbols-rounded">check_circle</span>Beautiful Scene Around</li>
+        <li><span class="material-symbols-rounded">check_circle</span>Exceptional lifestyle</li>
+        <li><span class="material-symbols-rounded">check_circle</span>Complete 24/7 Security</li>
+      </ul>
+    </div>
+    <figure class="feature-banner">
+      <img src="p5.jpg" alt="Historic Home Renovation" width="600" height="400" class="img-cover">
+    </figure>
+  </div>
+</section>
+   
+   
+
+    <!-- Video Section -->
+    <section class="section-video" id="About">
+        <div class="container-vidoe">
+            <div class="video-card">
+                
+                <button class="play-btn" aria-label="Play video">
+                   <video autoplay muted loop playsinline>
+                 <source src="4770380-hd_1920_1080_30fps.mp4" type="video/mp4">
+    
+                 </video>
+                    <span class="material-symbols-rounded">play_arrow</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="section story" id="About">
+        <div class="container-vidoe">
+            <div class="title-wrapper">
+                <div>
+                    <p class="section-subtitle">Our Customers</p>
+                    <h2 class="section-title">We Help 1000+ Families Find Their True Home</h2>
+                    <ul class="avatar-list">
+                        <li class="avatar"><img src="a1.jpg" alt="Customer 1" class="img-cover" width="80" height="80"></li>
+                        <li class="avatar"><img src="a2.webp" alt="Customer 2" class="img-cover" width="80" height="80"></li>
+                        <li class="avatar"><img src="a3.png" alt="Customer 3" class="img-cover" width="80" height="80"></li>
+                        <li class="avatar"><img src="a4.jpg" alt="Customer 4" class="img-cover" width="80" height="80"></li>
+                        <li class="avatar overlay-content"><span>99+</span></li>
+                    </ul>
+                </div>
+                <a href="#" class="btn btn-outline">
+                    <span>View All Stories</span>
+                    <span class="material-symbols-rounded">arrow_outward</span>
+                </a>
+            </div>
+        </div>
+    </section>
+  </main>
+  <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <div class="footer-brand">
+      <a href="#" class="logo">
+        <img src="logo.webp" alt="Wealthome Logo" width="150" height="30">
+      </a>
+      <p class="footer-text">
+        Your trusted partner in finding, selling, or renting the perfect home. <br>
+        © 2025 Wealthome. All rights reserved.
+      </p>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram"><span class="material-symbols-rounded">photo_camera</span></a>
+        <a href="#" aria-label="Facebook"><span class="material-symbols-rounded">public</span></a>
+        <a href="#" aria-label="Twitter"><span class="material-symbols-rounded">chat</span></a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Rent</a></li>
+          <li><a href="#">Sell</a></li>
+          <li><a href="#">Buy</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><span class="material-symbols-rounded">call</span> +91 98765 43210</li>
+          <li><span class="material-symbols-rounded">mail</span> info@wealthome.com</li>
+          <li><span class="material-symbols-rounded">location_on</span> Noida, Uttar Pradesh</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <div>
+  <form id="footer-contact-form" class="footer-contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit"><span class="material-symbols-rounded">send</span>Send</button>
+    <div id="footer-contact-msg"></div>
+  </form>
+</div>  
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
